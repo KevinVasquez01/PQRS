@@ -1,7 +1,12 @@
+
+/**************************GENERAL***********************/    
 *
     margin: 0
     padding: 0
+    box-sizing: border-box
     font-family: roboto
+
+/*************************BODY************************/   
 body
     background: white
     font-family: roboto, arial
@@ -13,6 +18,7 @@ body
     margin: auto
     background: #fff
     box-shadow: 0px 0px 3px gray
+    margin-top: 50px
 
 .contenedor-formulario
     width: 100%
@@ -51,7 +57,7 @@ body
         .select1
             font-size: 15px
             color: black
-            width: 50.2%
+            width: 50%
             height: 40px
             outline: none
             background: none
@@ -97,5 +103,41 @@ body
             align-items: center
             justify-content: center
 
+/****************************HEADER************************/
+header
+    .logo
+        a
+            color: #7608b9
+            text-decoration: none
+            font-family: "Pacifico"
+            font-size: 40px
+            position: absolute
+            margin: -10px 10px 0px 10px
+    ul
+        background: #e5d1f1
+        float: right
+        .miCuenta
+            margin-left: 700px
+
+        li
+            display: inline-block
+            float: right
+            margin: 0px 17.5px 0px 17.5px
+
+            &:hover
+                background: #d4aaec
+                transition: all .3s
+        a
+            display: block
+            padding: 15px 20px
+            color: black
+            text-decoration: none
+            &:hover
+                color: white
+                transition: all .3s            
+
+
         
-                
+            
+        
+
