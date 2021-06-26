@@ -11,7 +11,7 @@
     <title>SISTEMA PQRS</title>
 </head>
 <header class="site-header">
-    <h1 class="navbar-barnd logo"><a href="/" data-2>merkar</a></h1>
+    <h1 class="logo"><a href="">merkar</a></h1>
 
         <nav class="full-menu">
             <ul>
@@ -28,7 +28,7 @@
     <div class="contenedor-formulario">  
         <div class="wrap">
             <!-- formulario -->
-            <form action="" class="formulario" name="formulario_registro" method="">
+            <form action="" class="formulario" method="POST">
                 <div>
                     <h2 class="h2">SISTEMA DE ATENCIÓN VIRTUAL PQRS</h2>
                     <div class="input-group">
@@ -74,7 +74,7 @@
         
                     <div class="input-group">
                         <label for="pqrs">Tipo de solicitud: </label>
-                        <select class="select1" name="pqrs" id="pqrs">
+                        <select class="select1" name="tipo_de_solicitud" id="tipo_de_solicitud">
                             <option value="">Petición</option>
                             <option value="">Queja</option>
                             <option value="">Reclamo</option>
@@ -93,11 +93,14 @@
                     </div>
         
                     <div class="botoncenter">
-                        <input class="boton" type="submit" value="RADICAR">
+                        <input class="boton" type="submit" value="RADICAR" name="register">
                     </div>
                 </div>
             </form>
         </div>
     </div>
+    <?php
+    include("registrar.php");
+    ?>
 </body>
-</html>
+</html> 
